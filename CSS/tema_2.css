@@ -1,0 +1,142 @@
+:root {
+    --color-banner1: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    --color-fondo1: #110038;
+    --color-btn1: #EE3EFE;
+    --color-btn-vermas1: #4180f6;
+    --box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  }
+  
+  body {
+    background-color: var(--color-fondo1);
+  }
+
+.contenedor_banner, .contenedor_searchbar p, .block_sugerimos .sugestion_div div, .block_tendencias a p, #cont_src_gifs a p,.box-header{
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+  color: #FFFFFF;
+}
+
+#logogifos img{
+content: url(../assets/gifOF_logo_dark.png);
+}
+
+
+.btn{
+  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  background: #f7c9f3;
+  background: #EE3EFE;
+}
+
+.btn-buscar:active{
+  filter: brightness(90%); 
+  outline: 2px dotted #110038; 
+  outline-offset: -4px;
+}
+
+.btn-activo{
+background: #EE3EFE;
+color: #110038;
+}
+
+
+.misgifos{
+font-size: 16px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 18px;
+}
+
+.misgifos:hover{
+  outline: 2px dotted #FFFFFF; 
+  outline-offset: -4px;
+}
+
+.misgifos:active{
+  outline: none; 
+  outline-offset: none;
+  color: #867a7a;
+  outline: 2px dotted rgb(191, 151, 207); 
+}
+
+
+.list_temas li:hover{
+background: #2E32FB;
+border: 1px solid rgba(51,53,143,0.20);
+box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+color: #E6DCE4 ;
+}
+
+.contenedor_searchbar, .list_temas,.searchlist{
+background: #B4B4B4;
+box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+
+.list_temas li, .searchlist li{
+background: #CCCCCC;
+border: 1px solid #808080;
+box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.searchlist li{
+  background: #CCCCCC;
+  }
+
+.searchlist li:hover{
+  outline: 2px dotted rgb(0, 0, 0); 
+  outline-offset: -4px;
+}
+
+.upload-intro-wrapper, .share-modal-wrapper{
+  background: #110038;
+}
+
+
+#record{
+background: #EE3EFE;
+border: 1px solid #110038;
+box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+color: #FFFFFF;
+}
+
+
+#camera-button{
+content: url(../assets/camera_light.svg);
+}
+
+.progress-bar div div{
+  background: #999999;
+}
+
+.progress-bar i{
+  background: #EE3EFE;
+}
+
+.progress-bar-item-active{
+  background: #EE3EFE !important;
+}
+
+#restart{
+  background: #110038;
+  border: 1px solid #B4B4B4;
+  box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+  color: #FFFFFF;
+}
+
+#restart:active{
+  outline: 2px dotted #FFFFFF; 
+  outline-offset: -4px;
+}
+
+.upload-intro, .upload-intro p, .video-upload-message h4, .video-upload-message span, .share-text h4{
+  color: #FFFFFF;
+}
+
+.share-text .btn{
+  background-color: #EE3EFE;
+}
+.share-text .btn:hover{
+  color: #FFFFFF;
+  filter: brightness(80%);
+  outline: 2px dotted #FFFFFF; 
+  outline-offset: -5px;
+}

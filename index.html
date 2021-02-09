@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIFOS_Alejo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/comunes.css">
+    <link id="theme" rel="stylesheet" href="css/tema_1.css">
+</head>
+
+<body>
+
+    <div class="contenedor_banner">
+        <p class="banner_texto">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas:
+            12.765.803</p>
+    </div>
+
+
+
+    <div class="contenedor_general">
+
+
+        <div class="cont_menu">
+            <a href="index.html" id="logogifos"><img src="assets/gifOF_logo.png" alt="logo Dark"></a>
+
+            <div class="cont_botones">
+                <a class="btn" id="creargif" onclick="crearguifos();">Crear Guifos</a>
+                <a onclick="mostrarTemas()" class="btn temas" href="#" id="elegirtema">Elegir Tema</a>
+                <a id="dropdown" onclick="mostrarTemas()" class="btn temas" href="#"><img src="assets/dropdown.svg"
+                        alt="Flecha elegir Tema"></a>
+
+                <ul id="menu_temas" class="list_temas">
+                    <li id="tema_1" onclick="temaSailorDay();">Sailor Day</li>
+                    <li id="tema_2" onclick="temaSailorNight();">Sailor Night</li>
+                </ul>
+
+                <a class="misgifos" href="mis_gifos.html" onclick="misgifos();">Mis GifOS</a>
+            </div>
+        </div>
+
+
+        <div class="contenedor_searchbar">
+
+            <p>Buscar</p>
+            <div>
+                <input type="text" placeholder="Buscá lo que quieras!!!" id="searchbar"
+                    onkeypress="enterkey(event)" oninput="showSearchList()" autocomplete=off>
+                <button onclick="gifkeyword()" class="btn-buscar" id="btn-buscar"><img src="assets/lupa.svg" alt="imagen lupa">
+                    Buscar</button>
+            </div>
+            <ul class="searchlist" id="searchlist">
+                <li onclick="getValor(this.value)">Fails</li>
+                <li >Animales</li>
+                <li >Memes</li>
+            </ul>
+        </div>
+       
+
+
+        <p id="target"></p>
+
+        <div class="cont_tags_gifs" id="cont_tags_gifs">
+
+        </div>
+
+        <div class="cont_src_gifs" id="cont_src_gifs"></div>
+
+
+        <!--Inicio block-Sugerencias-->
+
+        <h2>Hoy te sugerimos:</h2>
+
+        <div class="block_sugerimos" id="sugerencias"></div>
+
+
+        <!--Inicio block-tendencias-->
+
+        <h2 class="">Tendencias:</h2>
+
+        <div id="block_tendencias" class="block_tendencias"></div>
+
+
+    </div>
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
